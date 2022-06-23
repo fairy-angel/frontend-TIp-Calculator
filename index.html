@@ -9,12 +9,14 @@
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" type="text//css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 </head>
 
 <body>
+  <div class="container">
   <h1>SPLI<br>TTER </h1>
+  <div class="inputVal">
   <div class="billSplitter">
     <div>
       <form action="/action_page.php">
@@ -29,26 +31,26 @@
       <form action="/action_page.php">
         <h2> Select Tip </h2>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">5% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">5% </a></button>
         </li>
 
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">10% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">10% </a></button>
         </li>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">15% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">15% </a></button>
         </li>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">20% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">20% </a></button>
         </li>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">25% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">25% </a></button>
         </li>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">50% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">50% </a></button>
         </li>
         <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick="#"> <a href="#">Custom% </a></button>
+          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">Custom% </a></button>
         </li>
         <div>
           <label for="numb-ppl"> Number of People
@@ -56,9 +58,12 @@
           <input type="number" placeholder="0" id="numb-ppl">
         </div>
     </div>
+  </div>
+
 
     <br>
     <div>
+      <div  class="outputVal">
       <form action="/action_page.php">
         <fieldset class="billSplitter">
           <label for="tip-amount">Tip Amount <br>/ person</label><br>
@@ -69,9 +74,11 @@
         </fieldset>
       </form>
     </div>
+    </div>
   </div>
   </div>
   </form>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">fairy-angel</a>.

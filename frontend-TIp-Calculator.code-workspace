@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/tip-calculator-app-main/images"
+		},
+		{
+			"path": "../../../Downloads/tip-calculator-app-main/design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frontend-TIp-Calculator"
+	}
+}

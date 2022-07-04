@@ -10,79 +10,80 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+    </style>
+    <!--ik putting css in html is passé and crude, forgive me!-->
 </head>
 
 <body>
-  <div class="container">
-  <h1>SPLI<br>TTER </h1>
-  <div class="inputVal">
-  <div class="billSplitter">
-    <div>
-      <form action="/action_page.php">
-
-        <label for="bill">
-          <h2> Bill </h2>
-        </label> <br>
-        <input type="number" placeholder="$" id="bill">
-    </div>
-
-    <div class="selectTip">
-      <form action="/action_page.php">
-        <h2> Select Tip </h2>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">5% </a></button>
-        </li>
-
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">10% </a></button>
-        </li>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">15% </a></button>
-        </li>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">20% </a></button>
-        </li>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">25% </a></button>
-        </li>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">50% </a></button>
-        </li>
-        <li>
-          <!--change 'onlcick' and 'a href' with js --> <button type="button" onclick=""> <a href="#">Custom% </a></button>
-        </li>
-        <div>
-          <label for="numb-ppl"> Number of People
-          </label> <br>
-          <input type="number" placeholder="0" id="numb-ppl">
-        </div>
-    </div>
+  <div class="logo">
+    <h1> S P L I <br>T T E R </h1>
   </div>
 
+  <div class="flexContainer">
+     <div class="box1"> 
+     <form action="/action_page.php">
+           <label for="bill">
+             <h2>
+             Bill
+             </h2>
+           </label>
+           <input type="number" placeholder="$" id="bill">
+         </form>
+         </div>
+      
+      <div class="buttonWrapper">
+        <h2>
+          Select Tip %
+        </h2>
+  <!--on the main draft, i originally tried making buttons 
+           out of a <ul> tag but nesting buttons w/in their own divs seems to work much better -->
+         <div class="buttonTip">
+          <button type="button">5%</button> 
+          </div>         
 
-    <br>
-    <div>
-      <div  class="outputVal">
+            <div class="buttonTip"> 
+              <button>10%</button>
+            </div>
+
+              <div class="buttonTip">
+                <button>15%</button>
+              </div>
+
+                  <div class="buttonTip">
+                    <button> 25%</button> 
+                  </div>
+
+                    <div class="buttonTip">
+                      <button>50%</button> 
+                    </div>
+        <input class="customInput" type="text" placeholder="Custom">
+        </div>
+<!-- save time and know when you can repeat code elsewhere, hunny-->
+       <div>
+           <form action="/action_page.php">
+           <label for="numberPpl" id="numberPpl">
+             <h2>
+             Number of People
+             </h2>
+           </label>
+           <input type="number" id="numberInput">  <!--add the person icon as a placeholder for the input-->
+         </form> 
+       </div>
+      
+       <div class= "box2">
       <form action="/action_page.php">
-        <fieldset class="billSplitter">
-          <label for="tip-amount">Tip Amount <br>/ person</label><br>
+       <!-- <fieldset class="billSplitter"> -->
+          <label for="tip-amount">Tip Amount <br>/ person</label>
           <input type="number" id="tipAmount" name="tip-amount" value="#"><br>
-          <label for="Total">Total <br>/ person</label><br>
+
+          <label for="Total">Total <br>/ person</label>
           <input type="number" id="total" name="total" value="#"><br><br>
           <input type="reset" value="reset">
-        </fieldset>
+       <!-- </fieldset>-->
       </form>
     </div>
-    </div>
-  </div>
-  </div>
-  </form>
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">fairy-angel</a>.
-  </div>
+      </div>
 </body>
-
 </html>

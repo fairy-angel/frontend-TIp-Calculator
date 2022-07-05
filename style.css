@@ -34,6 +34,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-flow:row;
+
 
   border: none;
   margin: 15%;
@@ -44,21 +46,51 @@ body {
 }
 
 .box1 {
-  color: hsl(171, 66%, 23%);
-
+  color: hsl(186, 14%, 43%);
+  
 }
 .buttonWrapper{
-  color: hsl(171, 66%, 23%);
+  color: hsl(186, 14%, 43%);
 }
 #numberPpl{
-  color: hsl(171,66%,23%);
+  color: hsl(186, 14%, 43%);
 }
 .box2{
 border-radius: 20px;
 background-color: hsl(171, 66%, 23%);
 color: white;
 
+
 margin: 15%;
 border: none;
 padding: 125px;
+}
+
+input{
+  background-color: hsl(189, 41%, 97%);
+  padding: 10px;
+  border-radius:1em;
+  border: none;
+  color: hsl(186, 14%, 43%);
+
+
+}
+
+.buttonTip{
+  display:inline-block;
+  background-color: hsl(171, 67%, 15%);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 24; 
+ 
+  position:absolute;
+  margin: 3px;
+  padding: 10px 5px;
+  min-width: 70px;
+  min-height: 10px;
+}
+
+.buttonTip:active {
+  background-color:hsl(172, 67%, 45%);
 }

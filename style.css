@@ -9,7 +9,14 @@ em is relative to the font-size of the element
   (2em means 2x the size of the current font)
 
 combine px and percent to get the best combo
+
+padding/margin shorthand:
+top/ right/ bottom/ left
+NO COMMAS
+
 */
+
+
 body {
   background-color: hsl(185, 41%, 84%);
   font-family: 'Space Mono', monospace;
@@ -29,41 +36,48 @@ body {
   background: white;
   font-family: 'Space Mono', monospace;
   font-weight: 700; 
-  font-size: 24px;
+  font-size: 18px;
 
   display: flex;
-  align-items: center;
+  flex-flow:column;
   justify-content: space-around;
-  flex-flow:row;
 
 
   border: none;
-  margin: 15%;
-  margin-top: 5%;
-  padding: 200px;
-  height: 200px;
-  width: 50%;
+  margin: 5% 15%;
+  padding: 15% 25% ;
+  height: 150px;
+  width: 20%;
 }
 
 .box1 {
   color: hsl(186, 14%, 43%);
+
   
+  padding: 10px;  
+  margin: 5%;
 }
-.buttonWrapper{
-  color: hsl(186, 14%, 43%);
-}
+
+
 #numberPpl{
   color: hsl(186, 14%, 43%);
 }
 .box2{
 border-radius: 20px;
-background-color: hsl(171, 66%, 23%);
+background-color: hsl(171, 66%, 18%);
 color: white;
+line-height: 35px;
 
 
-margin: 15%;
+margin: 5%;
 border: none;
-padding: 125px;
+padding: 20% 45%;
+
+}
+
+h4{
+  font-size: 18px;
+  color:hsl(185, 41%, 84%);
 }
 
 input{
@@ -75,6 +89,10 @@ input{
 
 
 }
+.buttonWrapper{
+  color: hsl(186, 14%, 43%);
+ 
+}
 
 .buttonTip{
   display:inline-block;
@@ -84,13 +102,28 @@ input{
   text-align: center;
   font-size: 24; 
  
-  position:absolute;
   margin: 3px;
   padding: 10px 5px;
   min-width: 70px;
   min-height: 10px;
 }
 
-.buttonTip:active {
+.buttonTip:active, .customInput {
   background-color:hsl(172, 67%, 45%);
 }
+
+.customInput{
+  background-color: hsl(185, 41%, 84%);
+  width: 70px;
+  height: 30px;
+  padding: 10px 5px;
+
+  text-align:center;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+

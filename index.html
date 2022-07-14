@@ -37,9 +37,11 @@
         <h2>
           Select Tip %
         </h2>
-  <!--on the main draft, i originally tried making buttons 
+  <!--on the main draft
+    , i originally tried making buttons 
            out of a <ul> tag but nesting buttons w/in their own divs seems to work much better -->
-         <div class="buttonTip">
+         <div class="row">
+            <div class="buttonTip">
           <button type="button">5%</button> 
           </div>         
 
@@ -50,7 +52,8 @@
               <div class="buttonTip">
                 <button type="button">15%</button>
               </div>
-
+            </div>
+            <div class="row">
                   <div class="buttonTip">
                     <button type="button"> 25%</button> 
                   </div>
@@ -59,6 +62,7 @@
                       <button type="button">50%</button> 
                     </div>
         <input class="customInput" type="text" placeholder="Custom">
+      </div>
         </div>
 <!-- save time and know when you can repeat code elsewhere, hunny-->
        <div>
@@ -74,14 +78,15 @@
       
        <div class= "box2">
       <form action="/action_page.php">
-       <!-- <fieldset class="billSplitter"> -->
-          <label for="tip-amount">Tip Amount <br>/ person</label>
+          <label for="tip-amount">Tip Amount </label>
+          <h4>/ person</h4>
           <input type="number" id="tipAmount" name="tip-amount" value="#"><br>
+          
 
-          <label for="Total">Total <br>/ person</label>
+          <label for="Total">Total </label>
+          <h4>/ person</h4>
           <input type="number" id="total" name="total" value="#"><br><br>
           <input type="reset" value="reset">
-       <!-- </fieldset>-->
       </form>
     </div>
       </div>

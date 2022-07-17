@@ -16,114 +16,190 @@ NO COMMAS
 
 */
 
-
 body {
   background-color: hsl(185, 41%, 84%);
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
-
-  }
-
-.logo{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  color: hsl(171, 66%, 23%)
 }
 
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: hsl(183, 100%, 15%);
+}
+
+  /*parent of container1,box1,box2*/
 .flexContainer {
   border-radius: 20px;
   background: white;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700; 
-  font-size: 18px;
-
-  display: flex;
-  flex-flow:column;
-  justify-content: space-around;
-
-
-  border: none;
-  margin: 5% 15%;
-  padding: 15% 25% ;
-  height: 150px;
-  width: 20%;
-}
-
-.box1 {
-  color: hsl(186, 14%, 43%);
-
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
   
-  padding: 10px;  
-  margin: 5%;
+  position:relative;
+  display: flex;
+  /* flex-flow:column;  Took this out because it was breaking things.  Maybe we could put this in another spot */
+
+  align-items: center; /* ADDED ALIGN ITEMS CENTER */
+  margin: auto; /* Margin auto will center the container of this div */
+  height: 500px; /* Typically should use width and height instead of trying to style sizes with padding/margin */
+  width: 50%;
+
+  justify-content: space-around;
+  border: none;
+  /* margin: 5% 15%;
+  padding: 15% 25% ; */
+  /* height: 150px; */
 }
 
+.container1 {  /* ADDED NEW CONTAINER */
+  height: 450px;
+  width: 350px;
 
-#numberPpl{
+  position:relative;
+  left: 25px;
+}
+
+.box1 { 
+  color: hsl(186, 14%, 43%);
+  
+
+}
+
+#numberPpl {
   color: hsl(186, 14%, 43%);
 }
-.box2{
-border-radius: 20px;
-background-color: hsl(171, 66%, 18%);
-color: white;
-line-height: 35px;
-
-
-margin: 5%;
-border: none;
-padding: 20% 45%;
-
+.box2 {
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  
+  margin: 5%;
+  height: 425px; 
+  width: 425px;
 }
 
-h4{
+
+h4 {
   font-size: 18px;
-  color:hsl(185, 41%, 84%);
+  color: hsl(185, 41%, 84%);
 }
 
-input{
+input {
   background-color: hsl(189, 41%, 97%);
   padding: 10px;
-  border-radius:1em;
+  border-radius: 5px;
   border: none;
   color: hsl(186, 14%, 43%);
-
-
 }
-.buttonWrapper{
+
+.buttonWrapper {
   color: hsl(186, 14%, 43%);
- 
 }
 
-.buttonTip{
-  display:inline-block;
-  background-color: hsl(171, 67%, 15%);
-  border-radius: 20px;
+/*lesson learned: make sure you're calling the proper item
+
+old function called
+buttonTip{
+  didn't work
+  bc its the wrapper}
+
+  new function calls
+  button{
+    works bc
+    its the actual button
+  }
+
+  */
+button{
+  margin: 3px;  /*  Good use of margin and padding here!  */
+  width: 80px;
+  height: 40px;
+  border:none;
+
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  background-color: hsl(183, 100%, 15%);
+  display: inline-block;
+  border-radius: 5px;
   color: white;
   text-align: center;
-  font-size: 24; 
- 
-  margin: 3px;
-  padding: 10px 5px;
-  min-width: 70px;
-  min-height: 10px;
+  font-size: 24;
 }
 
-.buttonTip:active, .customInput {
-  background-color:hsl(172, 67%, 45%);
+#inputBill, #numberInput{
+  width:90%;
 }
 
-.customInput{
+button:active,
+.customInput {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(186, 14%, 43%);
+}
+
+.customInput {
+  font-family: "Space Mono", monospace;
+  color: hsl(186, 14%, 43%);
+
   background-color: hsl(185, 41%, 84%);
   width: 70px;
-  height: 30px;
+  height: 20px;
   padding: 10px 5px;
+  margin:3px;
 
-  text-align:center;
+  text-align: center;
 }
 
-.row{
-  display:flex;
-  flex-wrap:wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
+/*A--created a new class in the form element to move the text around,
+#tipAmount and #total only changed the form's textbox*/ 
+.box2-text{
+  position:relative;
+  left: 3em;
+  top: 2em;
+  line-height: 10px;
+
+}
+#tipAmount, #total{
+  background-color: transparent;
+  position: relative;
+  left: 200px;
+  bottom: 2em;
+  width: 3em;
+  text-align: left;
+
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color:hsl(172, 67%, 45%)
+}
+
+#resetButton{
+ position:relative;
+  top:4em;
+  width:20em;
+  height:50px;
+  border:none;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  text-transform: uppercase;}
+
+  /* +++questions i should prolly know the answer to >.< +++
+
+  --the text in my tipamount/total form is scaled too big, 
+    how to fit appropriately
+    
+  --icon and dollar sign images won't load from the file explorer
+
+  ++pls explain how wrapped and/or flex items are affected/moved around like with the buttons
+ +++ i think i want to add VW/VH for dynamic font size, 
+      not a question just something xtra i want to do */

@@ -1,94 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
     </style>
     <!--ik putting css in html is passé and crude, forgive me!-->
-</head>
+  </head>
 
-<body>
-  <div class="logo">
-    <h1> S P L I <br>T T E R </h1>
-  </div>
+  <body>
+    <div class="logo">
+      <h1>S P L I <br />T T E R</h1>
+    </div>
 
-  <div class="flexContainer">
-     <div class="box1"> 
-     <form action="/action_page.php">
-           <label for="bill">
-             <h2>
-             Bill
-             </h2>
-           </label>
-           <input type="number" placeholder="$" id="inputBill">
-         </form>
-         </div>
-      
-      <div class="buttonWrapper">
-        <h2>
-          Select Tip %
-        </h2>
-  <!--on the main draft
+    <div class="flexContainer">
+      <!-- CONTAINER 1 START -->
+      <!-- TJW -->
+      <div class="container1">
+
+        <div class="box1">
+          <form action="/action_page.php">
+            <label for="bill">
+              <h2>
+                Bill
+              </h2>
+            </label>
+            <input type="number" placeholder="$" id="inputBill" />
+          </form>
+        </div>
+
+        <div class="buttonWrapper">
+          <h2>
+            Select Tip %
+          </h2>
+          <!--on the main draft
     , i originally tried making buttons 
            out of a <ul> tag but nesting buttons w/in their own divs seems to work much better -->
-         <div class="row">
+          <div class="row">
             <div class="buttonTip">
-          <button type="button">5%</button> 
-          </div>         
+              <button type="button">5%</button>
+            </div>
 
-            <div class="buttonTip"> 
+            <div class="buttonTip">
               <button type="button">10%</button>
             </div>
 
-              <div class="buttonTip">
-                <button type="button">15%</button>
-              </div>
+            <div class="buttonTip">
+              <button type="button">15%</button>
             </div>
-            <div class="row">
-                  <div class="buttonTip">
-                    <button type="button"> 25%</button> 
-                  </div>
+          </div>
+          <div class="row">
+            <div class="buttonTip">
+              <button type="button">25%</button>
+            </div>
 
-                    <div class="buttonTip">
-                      <button type="button">50%</button> 
-                    </div>
-        <input class="customInput" type="text" placeholder="Custom">
-      </div>
+            <div class="buttonTip">
+              <button type="button">50%</button>
+            </div>
+            <input class="customInput" type="text" placeholder="Custom" />
+          </div>
         </div>
-<!-- save time and know when you can repeat code elsewhere, hunny-->
-       <div>
-           <form action="/action_page.php">
-           <label for="numberPpl" id="numberPpl">
-             <h2>
-             Number of People
-             </h2>
-           </label>
-           <input type="number" id="numberInput">  <!--add the person icon as a placeholder for the input-->
-         </form> 
-       </div>
-      
-       <div class= "box2">
-      <form action="/action_page.php">
+
+        <div>
+          <form action="/action_page.php">
+            <label for="numberPpl" id="numberPpl">
+              <h2>
+                Number of People
+              </h2>
+            </label>
+            <input type="number" id="numberInput" />
+            <!--add the person icon as a placeholder for the input-->
+          </form>
+        </div>
+      </div>
+      <!-- CONTAINER END -->
+      <!-- TJW -->
+
+      <div class="box2">
+        <form action="/action_page.php" class="box2-text">
           <label for="tip-amount">Tip Amount </label>
           <h4>/ person</h4>
-          <input type="number" id="tipAmount" name="tip-amount" value="#"><br>
-          
+          <input
+            type="number"
+            id="tipAmount"
+            name="tip-amount"
+            value="#"
+            placeholder="$0.00"
+          /><br />
 
           <label for="Total">Total </label>
           <h4>/ person</h4>
-          <input type="number" id="total" name="total" value="#"><br><br>
-          <input type="reset" value="reset">
-      </form>
-    </div>
+          <input type="number" id="total" name="total" value="#" placeholder="$0.00" ><br />
+          <input type="reset" value="reset" id="resetButton" ><br />
+        </form>
       </div>
-</body>
+    </div>
+  </body>
 </html>

@@ -171,7 +171,7 @@ button:active,
   position: relative;
   left: 200px;
   bottom: 2em;
-  width: 3em;
+  min-width: 3em;
   text-align: left;
 
   font-family: "Space Mono", monospace;
@@ -194,9 +194,6 @@ button:active,
   text-transform: uppercase;}
 
   /* +++questions i should prolly know the answer to >.< +++
-
-  --the text in my tipamount/total form is scaled too big, 
-    how to fit appropriately
     
   --icon and dollar sign images won't load from the file explorer
 

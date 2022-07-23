@@ -51,7 +51,7 @@
     , i originally tried making buttons 
            out of a <ul> tag but nesting buttons w/in their own divs seems to work much better -->
           <div class="row">
-            <div class="buttonTip">
+            <div class="buttonTip" id="buttonTip">
               <button type="button">5%</button>
             </div>
 
@@ -100,14 +100,24 @@
             name="tip-amount"
             value="#"
             placeholder="$0.00"
-          /><br />
+          ><br />
 
           <label for="Total">Total </label>
           <h4>/ person</h4>
-          <input type="number" id="total" name="total" value="#" placeholder="$0.00" ><br />
-          <input type="reset" value="reset" id="resetButton" ><br />
+          <input class="buttonTip" 
+                  type="number" 
+                    id="total" 
+                      name="total" 
+                        value="#" 
+                          placeholder="$0.00" ><br />
+          <input class="buttonTip" 
+                  type="reset" 
+                    value="reset" 
+                      id="resetButton" ><br />
         </form>
       </div>
     </div>
+    <!--end of page, js only below-->
+    <script src="calculator.js"></script>
   </body>
 </html>
